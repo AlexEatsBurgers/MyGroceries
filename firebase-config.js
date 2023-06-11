@@ -3,13 +3,14 @@ import { getDatabase } from 'firebase/database';
 import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: process.env.VITE_API_KEY,
-  authDomain: process.env.VITE_AUTH_DOMAIN,
-  projectId: process.env.VITE_PROJECT_ID,
-  storageBucket: process.env.VITE_STORAGE_BUCKET,
-  messagingSenderId: process.env.VITE_MESSAGING_SENDER_ID,
-  appId: process.env.VITE_APP_ID,
-};
+  apiKey: "AIzaSyCV4eGM12H_yivfU2jsmBIJvWoPQpToeQQ",
+  authDomain: "groceries-fa1d9.firebaseapp.com",
+  databaseURL: "https://groceries-fa1d9-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "groceries-fa1d9",
+  storageBucket: "groceries-fa1d9.appspot.com",
+  messagingSenderId: "88016104827",
+  appId: "1:88016104827:web:7d14606feda55fb01061de"
+}
 
 const app = initializeApp(firebaseConfig);
 export const database = getDatabase(app);
