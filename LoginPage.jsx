@@ -4,7 +4,7 @@ import { auth } from "./firebase-config"
 import { LoginContext } from "./src/hooks/LoginContext";
 import { DataContext } from "./src/hooks/DataContext";
 import { useNavigate, Link } from "react-router-dom"
-import ProtectedRoutes from "./src/ProtectedRoutes";
+import ProtectedRoutes from "./ProtectedRoutes";
 
 function LoginPage() {
     const {user, updateUser, isSigningOut, setIsUserLoggedIn } = useContext(LoginContext)

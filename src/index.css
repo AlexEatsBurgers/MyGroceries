@@ -55,7 +55,7 @@ body{
   font-size: 1.25rem;
   font-family: 'Inter', sans-serif;
   width: 80%;
-  padding: .3em;
+  padding: .5em;
   border-radius: 5px;
   border: 2px solid var(--border-color-1);
 }
@@ -166,14 +166,16 @@ body{
 
 .list-input, .list-button {
   margin-bottom: .7em;
-  width: 60%;
+  width: 70%;
   text-align: center;
   border: none;
   display: inline-block;
+  /* padding: 0; */
 }
 
 .undo-button {
   color: var(--bg-color-2);
+  font-size: 2rem;
 }
 
 .list-input {

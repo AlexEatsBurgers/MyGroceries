@@ -1,9 +1,9 @@
 import React, { useState, useContext, useEffect, } from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faCircleHalfStroke } from '@fortawesome/free-solid-svg-icons'
-import { LoginContext } from "../hooks/LoginContext"
+import { LoginContext } from "./src/hooks/LoginContext"
 import { Link, useLocation } from "react-router-dom"
-import ShoppingList from "../ShoppingList"
+import ShoppingList from "./ShoppingList"
 
 export default function Header() {
     const { user, signout } = useContext(LoginContext)

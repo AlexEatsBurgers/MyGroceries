@@ -1,12 +1,12 @@
 import React from "react"
 import { Routes, Route } from "react-router-dom"
 
-import Header from "./components/Header"
+import Header from "../Header"
 import LoginPage from "../LoginPage"
 import SignUpPage from "../SignUpPage"
-import ProtectedRoutes from "./ProtectedRoutes"
-import ShoppingList from "./ShoppingList"
-import History from "./components/History"
+import ProtectedRoutes from "../ProtectedRoutes"
+import ShoppingList from "../ShoppingList"
+import History from "../History"
 
 function App() {
   return (
