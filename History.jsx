@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect } from "react"
-import { DataContext } from "./src/hooks/DataContext";
+import { DataContext } from "./DataContext";
 
 export default function History() {
     const { currentHistory, removeFromDB } = useContext(DataContext)

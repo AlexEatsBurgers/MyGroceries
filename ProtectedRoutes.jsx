@@ -1,8 +1,6 @@
 import React, { useContext } from "react"
 import { Navigate } from "react-router-dom"
-import { LoginContext } from "./src/hooks/LoginContext"
-import { auth } from "./firebase-config"
-
+import { LoginContext } from "./LoginContext"
 
 export default function ProtectedRoutes({children}){
     const {user} = useContext(LoginContext)

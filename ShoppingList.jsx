@@ -1,9 +1,7 @@
 import React, { useState, useContext, useEffect } from "react"
-import { DataContext } from "./src/hooks/DataContext"
+import { DataContext } from "./DataContext"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRotateLeft } from "@fortawesome/free-solid-svg-icons"
-import { update } from "firebase/database"
-
 
 export default function ShoppingList() {
   const { currentData, pushToDB, removeFromDB } = useContext(DataContext)

@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useContext } from "react"
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "./firebase-config"
-import { LoginContext } from "./src/hooks/LoginContext";
-import { DataContext } from "./src/hooks/DataContext";
+import { LoginContext } from "./LoginContext";
+import { DataContext } from "./DataContext";
 import { useNavigate, Link } from "react-router-dom"
  
 function SignUpPage() {
