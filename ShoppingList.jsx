@@ -63,7 +63,9 @@ export default function ShoppingList() {
 
   const handleAddToCart = (e) => {
     e.preventDefault();
-    pushToDB(e, newItem);
+    if (newItem.length > 0) {
+      pushToDB(e, newItem);
+    }
     setNewItem("");
   };
 
