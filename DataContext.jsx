@@ -43,7 +43,7 @@ function DataContextProvider({ children }) {
     ) {
       exactItemLocation = ref(database, `personal/${location}/${itemid}`);
     } else {
-      exactItemLocation = ref(database, `db2023//${user.uid}/${location}/${itemid}`);
+      exactItemLocation = ref(database, `db2023/${user.uid}/${location}/${itemid}`);
     }
     remove(exactItemLocation)
       .then(() => console.log("Item removed from database"))
